@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update flight</title>
+</head>
+<body>
+<a href="AdminServlet">Home</a><br>
+<form action="/UpdateFlightServlet" method="GET">
+    <label><b>Search</b></label>
+    <input type="text" name="search" required><br>
+    <button type="submit">Search</button><br>
+</form>
+<br>
+<form action="/UpdateFlightServlet" method="POST">
+
+    <label><b>Airplane</b></label>
+    <input type="text" name="airplane"><br>
+
+    <label><b>Departure City</b></label>
+    <input type="text" name="departureCity" ><br>
+
+    <label><b>Departure date</b></label>
+    <input type="text" name="departureDate" ><br>
+
+    <label><b>Arrival City</b></label>
+    <input type="text" name="arrivalCity" ><br>
+
+    <label><b>Arrival date</b></label>
+    <input type="text" name="arrivalDate"><br>
+
+    <button type="submit">Update flight</button>
+</form>
+</body>
+</html>
